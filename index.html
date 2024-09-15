@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Métadonnées essentielles -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Titre optimisé pour le SEO -->
+  <title>Ohana Food Truck | Cuisine fraîche et savoureuse à Marseillan Plage</title>
+  <meta name="description" content="Découvrez Ohana Food Truck à Marseillan Plage. Plats frais et faits maison, événements spéciaux, services pour vos occasions. Contactez-nous pour une expérience culinaire unique.">
+
+  <!-- Liens CSS -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Votre fichier CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Polices d'écriture -->
+  <!-- Police pour les titres -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <!-- Police pour le texte -->
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome pour les icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" style="background-color: var(--primary-color);">
+    <div class="container">
+      <a class="navbar-brand policeTitle" href="index.html">Ohana Food Truck</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"       aria-controls="navbarNav" aria-expanded="false" aria-label="Basculer la navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menus.html">Nos Menus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">À Propos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main>
+    <!-- Section Héro -->
+    <section class="hero-section">
+      <div class="overlay">
+        <div class="container text-center text-white">
+          <h1 data-aos="fade-down-right">Bienvenue sur Ohana Food Truck</h1>
+          <p data-aos="fade-down-right">Découvrez nos délicieux plats préparés avec passion et fraîcheur.</p>
+          <a href="tel:0749343293" class="btn btn-primary" data-aos="fade-down-right">Commander <i class="fas fa-phone-alt"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section "Nos Menus" -->
+    <section class="menus-section section">
+      <div class="container-fluid p-0">
+        <h2 class="text-center mb-5 policeTitle" >Nos Menus</h2>
+        <div id="menusCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicateurs -->
+          <ol class="carousel-indicators">
+            <li data-target="#menusCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#menusCarousel" data-slide-to="1"></li>
+            <li data-target="#menusCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Contenu du carrousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/poke.jpg" class="d-block w-100" alt="Poke bowl frais avec légumes colorés">
+            </div>
+            <div class="carousel-item">
+              <img src="images/poke2.jpg" class="d-block w-100" alt="Assortiment de plats savoureux du food truck">
+            </div>
+            <div class="carousel-item">
+              <img src="images/poke3.avif" class="d-block w-100" alt="Plat gourmet préparé avec soin">
+            </div>
+          </div>
+
+          <!-- Contrôles -->
+          <a class="carousel-control-prev" href="#menusCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Précédent</span>
+          </a>
+          <a class="carousel-control-next" href="#menusCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Suivant</span>
+          </a>
+        </div>
+
+        <!-- Texte et bouton -->
+        <div class="text-center mt-4 pb-4">
+          <p data-aos="fade-down">Nos menus sont entièrement frais.</p>
+          <a href="menus.html" class="btn btn-primary menuIcon" data-aos="fade-down">Découvrir nos menus <img src="images/icon/menu-du-restaurant.png" alt="Icône du menu du restaurant"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section "Nos Événements" -->
+    <section class="events-section section">
+      <div class="container text-center">
+        <h2 class="mb-4 policeTitle" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">Nos Événements</h2>
+        <p>Vous pouvez suivre nos dates d'événements tout au long de l'année sur notre page Instagram.</p>
+        <a href="https://www.instagram.com/votrecompteinstagram" target="_blank" class="btn btn-primary">
+          Suivez-nous sur Instagram <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Section "Vos Événements" -->
+    <section class="your-events-section section">
+      <div class="container">
+        <h2 class="mb-4 text-center policeTitle" data-aos="fade-down-right">Vos Événements</h2>
+        <p class="text-center" data-aos="fade-down-right">
+          Nous prenons à cœur de faire de votre événement une réussite : anniversaire, mariage, soirée privée, baptême, etc. Nous adaptons notre carte à vos goûts et à votre budget. Service food truck ou buffet, c'est vous qui choisissez. Pour toute question et devis, merci de nous contacter :
+        </p>
+        <div class="text-center" data-aos="fade-down-right">
+          <a href="mailto:ohanafoodtruck34@gmail.com" class="btn btn-primary m-2">
+            Nous contacter par email <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:0749343293" class="btn btn-primary m-2" data-aos="fade-down-right">
+            Nous appeler <i class="fas fa-phone-alt"></i>
+          </a>    
+        </div>
+      </div>
+    </section>
+
+    <!-- Section "À propos de nous" -->
+    <section class="about-us-section section">
+      <div class="container">
+        <h2 class="mb-4 text-center policeTitle" data-aos="fade-down-right">Nous Découvrir</h2>
+        <p class="text-center" data-aos="fade-down-right">
+          Bienvenue chez <strong data-aos="fade-down-right">Ohana Food Truck</strong> ! Nous sommes une entreprise familiale passionnée par la cuisine authentique et savoureuse. Notre mission est de vous offrir des plats frais et faits maison, préparés avec des ingrédients locaux et de saison. Chaque jour, nous parcourons les rues pour partager avec vous notre amour de la bonne nourriture. Venez nous rencontrer et découvrez une expérience culinaire unique qui ravira vos papilles.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section "Emplacement" -->
+    <section class="location-section section">
+      <div class="container">
+        <h2 class="mb-4 text-center policeTitle" data-aos="fade-down-right">Emplacement</h2>
+        <p class="text-center">
+          Nous sommes basés à Marseillan Plage et nous nous déplaçons dans un rayon d'une heure autour de cette zone. Consultez la carte ci-dessous pour voir notre zone de couverture.
+        </p>
+        <div class="map-container">
+          <!-- Intégration de l'iframe responsive -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11611.339957743243!2d3.54168225299263!3d43.3177135997722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b13a59f45c8e03%3A0x166a85c470c1e2e3!2sMarseillan%20Plage%2C%2034340%20Marseillan!5e0!3m2!1sfr!2sfr!4v1726432002457!5m2!1sfr!2sfr"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Carte indiquant l'emplacement de Marseillan Plage"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer py-4 ">
+    <div class="container " data-aos="fade-down-right">
+      <div class="row">
+        <!-- Section des liens de navigation -->
+        <div class="col-md-4">
+          <h5 class="policeTitle">Navigation</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menus.html">Nos Menus</a></li>
+            <li><a href="about.html">Nous Découvrir</a></li>
+          </ul>
+        </div>
+        <!-- Section des contacts -->
+        <div class="col-md-4">
+          <h5 class="policeTitle">Contact</h5>
+          <ul class="list-unstyled">
+            <li><a href="tel:0749343293">Téléphone : 07.49.34.32.93</a></li>
+            <li><a href="mailto:ohanafoodtruck34@gmail.com">Email : ohanafoodtruck34@gmail.com</a></li>
+          </ul>
+        </div>
+        <!-- Section des réseaux sociaux -->
+        <div class="col-md-4">
+          <h5 class="policeTitle">Suivez-nous</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://www.instagram.com/votrecompteinstagram" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+              </a>
+            </li>
+            <!-- Vous pouvez ajouter d'autres liens vers les réseaux sociaux ici -->
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col text-center">
+          <p>© 2024 Ohana Food Truck</p>
+          <p>Développé par <a href="mailto:jaysonmansuy@icloud.com">Jayson Mansuy</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts JavaScript -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- jQuery, Popper.js, Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Votre fichier JS -->
+  <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Métadonnées essentielles -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Titre optimisé pour le SEO -->
+  <title>Nos Menus | Ohana Food Truck - Cuisine fraîche et savoureuse</title>
+  <meta name="description" content="Découvrez les menus frais et faits maison de Ohana Food Truck. Plats préparés avec passion à base d'ingrédients locaux et de saison.">
+
+  <!-- Liens CSS -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Votre fichier CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Polices d'écriture -->
+  <!-- Police pour les titres -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <!-- Police pour le texte -->
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome pour les icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" style="background-color: var(--primary-color); position: sticky; top: 0; z-index: 1000;">
+    <div class="container">
+      <a class="navbar-brand policeTitle" href="index.html">Ohana Food Truck</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"       aria-controls="navbarNav" aria-expanded="false" aria-label="Basculer la navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="menus.html">Nos Menus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">À Propos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main>
+    <!-- Section "Nos Menus" -->
+    <section class="menus-section section">
+      <div class="container">
+        <h1 class="text-center mb-3 policeTitle" style="display: none;">Nos Menus</h1>
+        <!-- Boutons de filtre -->
+        <div class="text-center mb-3">
+          <button class="btn btn-primary filter-button m-1 active" data-category="All">Tous</button>
+          <button class="btn btn-outline-primary filter-button m-1" data-category="Poke">Pokes</button>
+          <button class="btn btn-outline-primary filter-button m-1" data-category="Wrap">Wraps</button>
+          <button class="btn btn-outline-primary filter-button m-1" data-category="Burger">Burgers</button>
+        </div>
+        <!-- Conteneur pour les cartes de menus -->
+        <div class="row" id="menuContainer">
+          <!-- Les cartes seront insérées ici dynamiquement par JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Section des liens de navigation -->
+        <div class="col-md-4">
+          <h5 class="policeTitle">Navigation</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menus.html">Nos Menus</a></li>
+            <li><a href="about.html">Nous Découvrir</a></li>
+          </ul>
+        </div>
+        <!-- Section des contacts -->
+        <div class="col-md-4">
+          <h5 class="policeTitle">Contact</h5>
+          <ul class="list-unstyled">
+            <li><a href="tel:0749343293">Téléphone : 07.49.34.32.93</a></li>
+            <li><a href="mailto:ohanafoodtruck34@gmail.com">Email : ohanafoodtruck34@gmail.com</a></li>
+          </ul>
+        </div>
+        <!-- Section des réseaux sociaux -->
+        <div class="col-md-4">
+          <h5 class="policeTitle">Suivez-nous</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://www.instagram.com/votrecompteinstagram" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+              </a>
+            </li>
+            <!-- Vous pouvez ajouter d'autres liens vers les réseaux sociaux ici -->
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col text-center">
+          <p>© 2024 Ohana Food Truck</p>
+          <p>Développé par <a href="mailto:jaysonmansuy@icloud.com">Jayson Mansuy</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts JavaScript -->
+  <!-- jQuery, Popper.js, Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Votre fichier JS -->
+  <script src="js/scripts.js"></script>
+  <!-- Script pour générer les menus -->
+  <script src="js/menus.js"></script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+/* Variables */
+:root {
+  /* Couleurs */
+  --primary-color: #56cbf9; /* Couleur principale */
+  --secondary-color: #78b5e1; /* Couleur secondaire */
+  --dark-color: #0e1f34; /* Couleur sombre */
+  --white-color: #ffffff; /* Couleur blanche */
+  --grey-color: #d3d3d5; /* Couleur grise */
+
+  /* Polices */
+  --font-family-base: "Cabin", sans-serif;
+  --font-family-title: "Pacifico", cursive;
+
+  /* Tailles de police */
+  --font-size-base: 16px;
+  --font-size-large: 1.25rem;
+  --font-size-p-large: 1.2rem;
+  --font-size-h1: 3rem;
+  --font-size-h2: 2.5rem;
+  --font-size-h3: 2rem;
+
+  /* Hauteurs de ligne */
+  --line-height-base: 1.6;
+
+  /* Dimensions */
+  --navbar-height: 56px;
+  --navbar-toggler-icon-width: 30px;
+  --navbar-toggler-icon-height: 3px;
+  --navbar-toggler-icon-spacing: 8px;
+}
+
+/* Styles de base */
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  background-color: var(--white-color);
+  color: var(--dark-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-title);
+  font-weight: 300;
+  color: var(--dark-color);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+p {
+  font-size: var(--font-size-base);
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: var(--white-color) !important;
+  font-size: var(--font-size-base);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--grey-color) !important;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+  width: var(--navbar-toggler-icon-width);
+  height: var(--navbar-toggler-icon-height);
+  background-color: var(--white-color);
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  width: var(--navbar-toggler-icon-width);
+  height: var(--navbar-toggler-icon-height);
+  background-color: var(--white-color);
+  position: absolute;
+  left: 0;
+}
+
+.navbar-toggler-icon::before {
+  top: calc(-1 * var(--navbar-toggler-icon-spacing));
+}
+
+.navbar-toggler-icon::after {
+  top: var(--navbar-toggler-icon-spacing);
+}
+
+.navbar-toggler-icon.rotate {
+  transform: rotate(90deg);
+}
+
+/* Section Héro */
+.hero-section {
+  position: relative;
+  background-image: url("../images/test.jpg"); /* Mettez à jour le chemin si nécessaire */
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    14,
+    31,
+    52,
+    0.7
+  ); /* Couleur sombre avec transparence */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.hero-section h1 {
+  color: var(--white-color);
+  font-size: var(--font-size-h1);
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: var(--font-size-large);
+  margin-bottom: 2rem;
+}
+
+.hero-section .btn {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: var(--font-size-large);
+  color: var(--white-color);
+}
+
+.hero-section .btn:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Sections communes */
+.section {
+  padding: 3rem 0;
+}
+
+.section h2 {
+  font-size: var(--font-size-h2);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section p {
+  font-size: var(--font-size-p-large);
+  line-height: var(--line-height-base);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.btn-custom {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--white-color);
+  padding: 0.75rem 1.5rem;
+  font-size: var(--font-size-base);
+}
+
+.btn-custom:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Section "Nos Menus" */
+.menus-section {
+  background-color: var(--grey-color);
+}
+
+.menus-section .carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.menus-section .menuIcon img {
+  padding-left: 1rem;
+  height: 34px;
+  width: 45px;
+}
+
+/* Section "Nos Événements" */
+.events-section {
+  background-color: var(--white-color);
+}
+
+/* Section "Vos Événements" */
+.your-events-section {
+  background-color: var(--grey-color);
+}
+
+.your-events-section .fas {
+  padding-left: 0.5rem;
+}
+
+/* Section "À propos de nous" */
+.about-us-section {
+  background-color: var(--white-color);
+}
+
+.about-us-section strong {
+  color: var(--primary-color);
+}
+
+/* Section "Emplacement" */
+.location-section {
+  background-color: var(--grey-color);
+}
+
+.location-section .map-container {
+  margin-top: 2rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  padding: 2rem 0;
+}
+
+.footer h5 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.footer a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--secondary-color);
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer .row.mt-3 {
+  border-top: 1px solid var(--grey-color);
+  padding-top: 1rem;
+}
+
+/* Ajustements responsives */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-collapse {
+    background-color: var(--primary-color);
+  }
+
+  .hero-section {
+    height: 60vh;
+  }
+
+  .menus-section .carousel-item img {
+    height: 300px;
+  }
+}

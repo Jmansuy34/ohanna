@@ -1,0 +1,31 @@
+/* Styles pour les cartes de menus */
+.menu-card {
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: var(--white-color);
+  }
+  
+  .menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .menu-card .card-title {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+  }
+  
+  .menu-card .card-text {
+    font-size: 1rem;
+    color: var(--dark-color);
+  }
+  
+  .menu-card strong {
+    color: var(--primary-color);
+  }
+  
